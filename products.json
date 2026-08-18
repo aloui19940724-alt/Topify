@@ -12,6 +12,12 @@
     "category": "subscriptions"
   },
   {
+    "name": "Google AI Plus",
+    "price": "18 DT",
+    "image": "images/gemini.jpg",
+    "category": "subscriptions"
+  },
+  {
     "name": "PUBG UC 60",
     "price": "4 DT",
     "image": "images/pubg60.jpg",
@@ -28,11 +34,5 @@
     "price": "5 DT",
     "image": "images/ff.jpg",
     "category": "games"
-  },
-  {
-    "name": "Google AI Plus",
-    "price": "18 DT",
-    "image": "images/gemini.jpg",
-    "category": "subscriptions"
   }
 ]

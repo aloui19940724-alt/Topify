@@ -1,167 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tunify</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="متجر Topify للاشتراكات والخدمات الرقمية - YouTube Premium, ChatGPT, PUBG, Free Fire">
+  <meta name="keywords" content="YouTube Premium, ChatGPT, PUBG, Free Fire, اشتراكات رقمية">
+  <meta name="theme-color" content="#f5c542">
+  <meta property="og:title" content="Topify - الخدمات الرقمية المتميزة">
+  <meta property="og:description" content="متجر متخصص في بيع الاشتراكات والخدمات الرقمية">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://topify.shop">
+  
+  <title>Topify - متجر الخدمات الرقمية</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-wnQlP0/7q4GP1fcDZ4NO3IjRa3ppjySLBXG04InJtIc0/LGSOcmTUStRKafImc7OG6QVRXwOmkDPyWvMMUDMzw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
 <!-- HEADER -->
-
 <header class="header">
-
-<button class="icon-btn" id="menuBtn">
-<i class="fas fa-bars"></i>
-</button>
-
-<div class="logo">TUNIFY</div>
-
-<button class="icon-btn">
-<i class="fas fa-user"></i>
-</button>
-
+  <button class="icon-btn" id="menuBtn" aria-label="فتح القائمة">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <div class="logo">TOPIFY</div>
+  
+  <button class="icon-btn" aria-label="حسابي">
+    <i class="fas fa-user"></i>
+  </button>
 </header>
 
 <!-- SIDEBAR -->
-
-<div class="sidebar" id="sidebar">
-
-<div class="sidebar-header">
-<span>TUNIFY</span>
-<button id="closeMenu">✕</button>
+<div class="sidebar" id="sidebar" role="navigation">
+  <div class="sidebar-header">
+    <span>TOPIFY</span>
+    <button id="closeMenu" aria-label="إغلاق القائمة">✕</button>
+  </div>
+  
+  <ul>
+    <li>🏠 الرئيسية</li>
+    <li>🎮 شحن الألعاب</li>
+    <li>📺 الاشتراكات الشهرية</li>
+    <li>🤖 أدوات الذكاء الاصطناعي</li>
+    <li>🎁 بطاقات الهدايا</li>
+    <li>📞 اتصل بنا</li>
+  </ul>
 </div>
 
-<ul>
-<li>🏠 Home</li>
-<li>🎮 Game Top-Ups</li>
-<li>📺 Monthly Subscriptions</li>
-<li>🤖 AI Tools</li>
-<li>🎁 Gift Cards</li>
-<li>📞 Contact</li>
-</ul>
+<div class="overlay" id="overlay" role="presentation"></div>
 
-</div>
-
-<div class="overlay" id="overlay"></div>
-
-<!-- HERO -->
-
+<!-- HERO SECTION -->
 <section class="hero">
-
-<h1>TUNIFY</h1>
-
-<p>
-Premium Subscriptions, Game Top-Ups & AI Tools
-</p>
-
-<a href="#latest-products" class="hero-btn">
-Browse Products
-</a>
-
+  <h1>TOPIFY</h1>
+  
+  <p>الخدمات الرقمية المتميزة - اشتراكات، شحن الألعاب وأدوات الذكاء الاصطناعي</p>
+  
+  <a href="#latest-products" class="hero-btn">استكشف المنتجات</a>
 </section>
 
-<!-- SEARCH -->
-
+<!-- SEARCH BOX -->
 <div class="search-box">
-
-<input
-type="text"
-id="searchInput"
-placeholder="🔍 Search products..."
->
-
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="🔍 ابحث عن المنتجات..." 
+    aria-label="بحث عن المنتجات"
+  >
 </div>
 
 <!-- CATEGORIES -->
-
-<section class="categories">
-
-<button>🎮 Games</button>
-
-<button>📺 Subscriptions</button>
-
-<button>🤖 AI Tools</button>
-
-<button>🎁 Gift Cards</button>
-
-</section>
+<section class="categories" role="group" aria-label="تصفية حسب الفئة"></section>
 
 <!-- LATEST PRODUCTS -->
-
 <section class="section" id="latest-products">
-
-<h2>Latest Products</h2>
-
-<div class="products" id="productsContainer"></div>
-
-</section>
-
-<!-- BEST SELLERS -->
-
-<section class="section">
-
-<h2>🔥 Best Sellers</h2>
-
-<div class="products">
-
-<div class="product">
-<img src="images/pubg300.jpg" alt="PUBG UC 300">
-<h3>PUBG UC 300</h3>
-<p>15 DT</p>
-</div>
-
-<div class="product">
-<img src="images/youtube.jpg" alt="YouTube Premium">
-<h3>YouTube Premium</h3>
-<p>12 DT</p>
-</div>
-
-<div class="product">
-<img src="images/chatgpt.jpg" alt="ChatGPT Go">
-<h3>ChatGPT Go</h3>
-<p>15 DT</p>
-</div>
-
-</div>
-
+  <h2>أحدث المنتجات</h2>
+  <div class="products" id="productsContainer" role="grid"></div>
 </section>
 
 <!-- FOOTER -->
-
 <footer class="footer">
-
-<h3>TUNIFY</h3>
-
-<p>
-Premium Digital Services
-</p>
-
-<div class="socials">
-
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-
-<a href="#"><i class="fab fa-telegram"></i></a>
-
-<a href="#"><i class="fab fa-facebook"></i></a>
-
-<a href="#"><i class="fab fa-instagram"></i></a>
-
-</div>
-
-<p class="copyright">
-© 2026 Tunify.shop
-</p>
-
+  <h3>TOPIFY</h3>
+  
+  <p>متجر متخصص في الخدمات الرقمية المتميزة</p>
+  
+  <div class="socials" aria-label="وسائل التواصل الاجتماعي">
+    <a href="https://wa.me/21655234874" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="#" aria-label="تابعنا على Telegram">
+      <i class="fab fa-telegram"></i>
+    </a>
+    
+    <a href="#" aria-label="تابعنا على Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+    
+    <a href="#" aria-label="تابعنا على Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+  
+  <p class="copyright">© 2026 Topify.shop - جميع الحقوق محفوظة</p>
 </footer>
 
-<script src="script.js"></script>
+<!-- Scripts -->
+<script src="config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
