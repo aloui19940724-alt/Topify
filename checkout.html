@@ -1,1 +1,86 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="product-page">
+
+<h1>Checkout</h1>
+
+<p id="productName"></p>
+
+<h2 id="productPrice"></h2>
+
+<input
+type="text"
+id="customerName"
+placeholder="Your Name"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<input
+type="text"
+id="customerWhatsapp"
+placeholder="WhatsApp Number"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<button
+class="buy-now"
+onclick="sendOrder()">
+Place Order
+</button>
+
+</div>
+
+<script>
+
+document.getElementById("productName").innerText =
+localStorage.getItem("productName");
+
+document.getElementById("productPrice").innerText =
+localStorage.getItem("productPrice");
+
+function sendOrder(){
+
+const name =
+document.getElementById("customerName").value;
+
+const whatsapp =
+document.getElementById("customerWhatsapp").value;
+
+const product =
+localStorage.getItem("productName");
+
+const price =
+localStorage.getItem("productPrice");
+
+const message =
+encodeURIComponent(
+`New Order
+
+Name: ${name}
+
+WhatsApp: ${whatsapp}
+
+Product: ${product}
+
+Price: ${price}`
+);
+
+window.open(
+`https://wa.me/21655234874?text=${message}`,
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
