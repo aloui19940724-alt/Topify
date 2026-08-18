@@ -4,71 +4,106 @@ const overlay = document.getElementById("overlay");
 const closeMenu = document.getElementById("closeMenu");
 
 menuBtn.addEventListener("click", () => {
-sidebar.classList.add("active");
-overlay.classList.add("active");
+  sidebar.classList.add("active");
+  overlay.classList.add("active");
 });
 
 closeMenu.addEventListener("click", () => {
-sidebar.classList.remove("active");
-overlay.classList.remove("active");
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
 });
 
 overlay.addEventListener("click", () => {
-sidebar.classList.remove("active");
-overlay.classList.remove("active");
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
 });
 
 const products = [
-{
-name: "YouTube Premium",
-price: "12 DT",
-image: "images/youtube.jpg"
-},
-{
-name: "ChatGPT Go",
-price: "15 DT",
-image: "images/chatgpt.jpg"
-},
-{
-name: "PUBG UC 60",
-price: "4 DT",
-image: "images/pubg60.jpg"
-},
-{
-name: "PUBG UC 300",
-price: "15 DT",
-image: "images/pubg300.jpg"
-},
-{
-name: "Free Fire Diamonds",
-price: "5 DT",
-image: "images/ff.jpg"
-},
-{
-name: "Google AI Plus",
-price: "18 DT",
-image: "images/gemini.jpg"
-}
+  {
+    name: "YouTube Premium",
+    price: "12 DT",
+    image: "images/youtube.jpg",
+    category: "subscription"
+  },
+
+  {
+    name: "ChatGPT Go",
+    price: "15 DT",
+    image: "images/chatgpt.jpg",
+    category: "subscription"
+  },
+
+  {
+    name: "Google AI Plus",
+    price: "18 DT",
+    image: "images/gemini.jpg",
+    category: "subscription"
+  },
+
+  {
+    name: "PUBG UC 60",
+    price: "4 DT",
+    image: "images/pubg60.jpg",
+    category: "game"
+  },
+
+  {
+    name: "PUBG UC 300",
+    price: "15 DT",
+    image: "images/pubg300.jpg",
+    category: "game"
+  },
+
+  {
+    name: "Free Fire Diamonds",
+    price: "5 DT",
+    image: "images/ff.jpg",
+    category: "game"
+  }
 ];
 
-function renderProducts(items){
+const container = document.getElementById("productsContainer");
 
-const container =
-document.getElementById("productsContainer");
+function renderProducts(items) {
 
-container.innerHTML = "";
+  container.innerHTML = "";
 
-items.forEach(product => {
+  items.forEach(product => {
 
-container.innerHTML += `
-<div class="product">
-<img src="${product.image}" alt="${product.name}">
-<h3>${product.name}</h3>
-<p>${product.price}</p>
-</div>
-`;
+    container.innerHTML += `
+      <div class="product">
 
-});
+        <img src="${product.image}" alt="${product.name}">
+
+        <h3>${product.name}</h3>
+
+        <p>${product.price}</p>
+
+        <button class="buy-btn"
+        onclick="buyProduct('${product.name}')">
+        Buy Now
+        </button>
+
+      </div>
+    `;
+
+  });
+
+}
+
+function buyProduct(productName) {
+
+  const phone = "21600000000";
+
+  const message =
+  encodeURIComponent(
+  `Hello, I want to order ${productName}`
+  );
+
+  window.open(
+  `https://wa.me/${phone}?text=${message}`,
+  "_blank"
+  );
 
 }
 
@@ -79,14 +114,13 @@ document.getElementById("searchInput");
 
 searchInput.addEventListener("input", () => {
 
-const value =
-searchInput.value.toLowerCase();
+  const value =
+  searchInput.value.toLowerCase();
 
-const filtered =
-products.filter(product =>
-product.name.toLowerCase().includes(value)
-);
+  const filtered =
+  products.filter(product =>
+  product.name.toLowerCase().includes(value));
 
-renderProducts(filtered);
+  renderProducts(filtered);
 
 });
