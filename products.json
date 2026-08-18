@@ -1,0 +1,38 @@
+[
+  {
+    "name": "YouTube Premium",
+    "price": "12 DT",
+    "image": "images/youtube.jpg",
+    "category": "subscriptions"
+  },
+  {
+    "name": "ChatGPT Go",
+    "price": "15 DT",
+    "image": "images/chatgpt.jpg",
+    "category": "subscriptions"
+  },
+  {
+    "name": "PUBG UC 60",
+    "price": "4 DT",
+    "image": "images/pubg60.jpg",
+    "category": "games"
+  },
+  {
+    "name": "PUBG UC 300",
+    "price": "15 DT",
+    "image": "images/pubg300.jpg",
+    "category": "games"
+  },
+  {
+    "name": "Free Fire Diamonds",
+    "price": "5 DT",
+    "image": "images/ff.jpg",
+    "category": "games"
+  },
+  {
+    "name": "Google AI Plus",
+    "price": "18 DT",
+    "image": "images/gemini.jpg",
+    "category": "subscriptions"
+  }
+]
