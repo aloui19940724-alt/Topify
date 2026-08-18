@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Tunify</title>
 
 <link rel="stylesheet" href="style.css">
@@ -14,21 +13,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <body>
 
+<!-- HEADER -->
+
 <header class="header">
 
 <button class="icon-btn">
 <i class="fas fa-user"></i>
 </button>
 
-<div class="logo">
-TUNIFY
-</div>
+<div class="logo">TUNIFY</div>
 
 <button class="icon-btn" id="menuBtn">
 <i class="fas fa-bars"></i>
 </button>
 
 </header>
+
+<!-- SIDEBAR -->
 
 <div class="sidebar" id="sidebar">
 
@@ -41,54 +42,127 @@ TUNIFY
 </div>
 
 <ul>
-
-<li>🏠 الرئيسية</li>
-
-<li>🎮 عملات الألعاب</li>
-
-<li>📺 الاشتراكات الشهرية</li>
-
-<li>🎁 بطاقات الهدايا</li>
-
-<li>🔥 العروض الخاصة</li>
-
-<li>📞 اتصل بنا</li>
-
+<li>🏠 Home</li>
+<li>🎮 Game Top-Ups</li>
+<li>📺 Monthly Subscriptions</li>
+<li>🤖 AI Tools</li>
+<li>🎁 Gift Cards</li>
+<li>📞 Contact</li>
 </ul>
 
 </div>
 
 <div class="overlay" id="overlay"></div>
 
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Power Your Digital World</h1>
+
+<p>
+Premium Subscriptions, Game Top-Ups and AI Tools
+</p>
+
+<a href="#latest-products" class="hero-btn">
+Browse Products
+</a>
+
+</section>
+
+<!-- SEARCH -->
+
 <div class="search-box">
 
 <input
 type="text"
 id="searchInput"
-placeholder="🔍 ابحث عن منتج..."
+placeholder="🔍 Search products..."
 >
 
 </div>
 
+<!-- CATEGORIES -->
+
 <section class="categories">
 
-<button>🎮 الألعاب</button>
+<button>🎮 Games</button>
 
-<button>📺 الاشتراكات</button>
+<button>📺 Subscriptions</button>
 
-<button>🎁 البطاقات</button>
+<button>🤖 AI Tools</button>
 
-<button>🔥 العروض</button>
+<button>🎁 Gift Cards</button>
 
 </section>
 
-<section class="section">
+<!-- LATEST PRODUCTS -->
 
-<h2>آخر المنتجات المضافة</h2>
+<section class="section" id="latest-products">
+
+<h2>Latest Products</h2>
 
 <div class="products" id="productsContainer"></div>
 
 </section>
+
+<!-- BEST SELLERS -->
+
+<section class="section">
+
+<h2>🔥 Best Sellers</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="images/pubg300.jpg">
+<h3>PUBG UC 300</h3>
+<p>15 DT</p>
+</div>
+
+<div class="product">
+<img src="images/youtube.jpg">
+<h3>YouTube Premium</h3>
+<p>12 DT</p>
+</div>
+
+<div class="product">
+<img src="images/chatgpt.jpg">
+<h3>ChatGPT Go</h3>
+<p>15 DT</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<h3>TUNIFY</h3>
+
+<p>
+Premium Digital Services
+</p>
+
+<div class="socials">
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+<a href="#"><i class="fab fa-telegram"></i></a>
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+</div>
+
+<p class="copyright">
+© 2026 Tunify.shop
+</p>
+
+</footer>
 
 <script src="script.js"></script>
 
