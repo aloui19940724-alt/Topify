@@ -65,13 +65,15 @@ const products = [
 const container = document.getElementById("productsContainer");
 
 function renderProducts(items) {
+function renderProducts(items) {
 
   container.innerHTML = "";
 
   items.forEach(product => {
 
     container.innerHTML += `
-      <div class="product">
+      <div class="product"
+      onclick="location.href='product.html'">
 
         <img src="${product.image}" alt="${product.name}">
 
@@ -79,8 +81,9 @@ function renderProducts(items) {
 
         <p>${product.price}</p>
 
-        <button class="buy-btn"
-        onclick="buyProduct('${product.name}')">
+        <button
+        class="buy-btn"
+        onclick="event.stopPropagation();buyProduct('${product.name}')">
         Buy Now
         </button>
 
