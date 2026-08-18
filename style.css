@@ -116,3 +116,18 @@ width:8px;
 background:#f5c542;
 border-radius:20px;
 }
+.buy-btn{
+width:calc(100% - 20px);
+margin:0 10px 12px;
+padding:10px;
+border:none;
+border-radius:10px;
+background:#f5c542;
+color:#000;
+font-weight:bold;
+cursor:pointer;
+}
+
+.buy-btn:hover{
+opacity:.9;
+}
