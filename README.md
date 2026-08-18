@@ -1,14 +1,14 @@
-# Topify - متجر الخدمات الرقمية
+# Tunify - متجر الخدمات الرقمية
 
 ## 📱 نبذة عن المشروع
 
-Topify هو متجر إلكتروني حديث متخصص في بيع الخدمات الرقمية والاشتراكات المدفوعة مثل:
+Tunify هو متجر إلكتروني حديث متخصص في بيع الخدمات الرقمية والاشتراكات المدفوعة مثل:
 - 🎮 شحن الألعاب (PUBG, Free Fire, إلخ)
 - 📺 الاشتراكات الشهرية (YouTube Premium, ChatGPT, Google AI Plus)
 - 🤖 أدوات الذكاء الاصطناعي
 - 🎁 بطاقات الهدايا الرقمية
 
-## 🎯 الميزات
+## 🎯 المميزات
 
 ✅ **واجهة مستخدم حديثة وجذابة**
 - تصميم مظلم احترافي
@@ -46,7 +46,7 @@ Topify هو متجر إلكتروني حديث متخصص في بيع الخدم
 ## 📁 هيكل المشروع
 
 ```
-Topify/
+Tunify/
 ├── index.html              # الصفحة الرئيسية
 ├── products.json           # بيانات المنتجات
 ├── config.js               # الإعدادات والثوابت
@@ -61,7 +61,7 @@ Topify/
 │   ├── api.js              # جلب البيانات
 │   └── utils.js            # دوال مساعدة
 │
-├── images/                 # صور المنتجات
+├─��� images/                 # صور المنتجات
 │   ├── favicon.ico
 │   ├── placeholder.jpg
 │   └── ... (صور المنتجات)
@@ -112,9 +112,9 @@ http-server
 
 ```javascript
 const CONFIG = {
-  WHATSAPP_PHONE: '21655234874',  // رقم WhatsApp
+  WHATSAPP_PHONE: '21655234874',  // ��قم WhatsApp
   SEARCH_DEBOUNCE: 300,            // تأخير البحث بالمللي ثانية
-  STORE_NAME: 'Topify',            # اسم المتجر
+  STORE_NAME: 'Tunify',            // اسم المتجر
 };
 ```
 
@@ -174,8 +174,8 @@ const CONFIG = {
 ## 📞 التواصل والدعم
 
 - WhatsApp: [اضغط هنا](https://wa.me/21655234874)
-- Email: support@topify.shop
-- Telegram: @TopifyShop
+- Email: support@tunify.shop
+- Telegram: @TunifyShop
 
 ## 📄 الترخيص
 
@@ -183,7 +183,7 @@ const CONFIG = {
 
 ## 🙏 شكر وتقدير
 
-شكراً لاستخدامك Topify! نتمنى أن يكون المتجر مفيداً لك ولعملائك.
+شكراً لاستخدامك Tunify! نتمنى أن يكون المتجر مفيداً لك ولعملائك.
 
 ---
 
