@@ -93,7 +93,7 @@ function renderProducts(items) {
 
 function buyProduct(productName) {
 
-  const phone = "21600000000";
+  const phone = "21655234874";
 
   const message =
   encodeURIComponent(
