@@ -1,0 +1,65 @@
+/* متغيرات CSS للألوان والأحجام */
+
+:root {
+  /* الألوان الأساسية */
+  --primary-color: #f5c542;
+  --primary-hover: #ffad00;
+  --secondary-color: #ff9800;
+  --danger-color: #ff4444;
+  --success-color: #4caf50;
+
+  /* ألوان الخلفية */
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #151515;
+  --bg-card: #181818;
+  --bg-input: #1c1c1c;
+
+  /* ألوان الحدود والفواصل */
+  --border-color: #242424;
+  --border-light: #2a2a2a;
+
+  /* ألوان النصوص */
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+
+  /* الأحجام */
+  --header-height: 60px;
+  --sidebar-width: 280px;
+  --border-radius: 12px;
+  --border-radius-lg: 20px;
+  --border-radius-pill: 30px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 32px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+/* Dark mode (الوضع المظلم - الوضع الافتراضي) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --bg-card: #ffffff;
+    --bg-input: #eeeeee;
+    --border-color: #e0e0e0;
+    --text-primary: #000000;
+    --text-secondary: #666666;
+    --text-muted: #999999;
+  }
+}
